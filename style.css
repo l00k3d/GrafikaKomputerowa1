@@ -1,0 +1,45 @@
+
+   {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Fira Sans', Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    background-image: url('pexels-antonio-batinic-2573434-4164418.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: rgba(0, 100, 96, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 35px;
+  }
+  
+  header h1 {
+    color: white;
+  }
+  
+
+  nav {
+    margin-top: 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: rgba(0, 100, 96, 0.9);
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color:

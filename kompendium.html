@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kompendium Grafiki Komputerowej</title>
+  <style>
+    body {
+      font-family: 'Fira Sans', Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f0f0f0;
+      text-align: center;
+      background-image: url('pexels-antonio-batinic-2573434-4164418.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    header {
+      background-color: rgba(0, 100, 96, 0.7);
+      padding: 30px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    header h1 {
+      margin: 0;
+      color: white;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      background-color: rgba(0, 100, 96, 0.9);
+      border-radius: 5px;
+      margin: 5px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #0056b3;
+    }
+    main {
+      background-color: white;
+      padding: 40px;
+      border-radius: 10px;
+      max-width: 800px;
+      margin: auto;
+      text-align: justify;
+      margin-top: 40px;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    footer {
+      margin-top: 20px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kompendium Grafiki Komputerowej</h1>
+    <nav>
+      <a href="index.html">Strona Główna</a>
+      <a href="wektorowa.html">Grafika Wektorowa</a>
+      <a href="rastrowa.html">Grafika Rastrowa</a>
+      <a href="trojwymiarowa.html">Grafika 3D</a>
+      <a href="#podstawy">Kompendium</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="podstawy">
+      <h2>Podstawowe zagadnienia</h2>
+      <p>
+        Grafika komputerowa to dziedzina informatyki, która zajmuje się tworzeniem i obrabianiem obrazów przy użyciu komputera. Dzięki niej możemy projektować plakaty, loga, gry, animacje czy strony internetowe.
+      </p>
+      <p>
+        Wyróżniamy dwa główne typy grafiki: rastrową (opartą na pikselach, np. zdjęcia) oraz wektorową (opartą na kształtach i liniach, np. logotypy). Grafika komputerowa to też podstawa tworzenia grafiki 3D i efektów specjalnych w filmach.
+      </p>
+      <img src="grafika-podstawy.png" alt="Ilustracja przedstawiająca różne typy grafiki">
+    </section>
+  
+    <section id="rozdzielczosc">
+      <h2>Rozdzielczość</h2>
+      <p>
+        Rozdzielczość to liczba pikseli (małych punktów) w obrazie. Im więcej pikseli, tym obraz jest dokładniejszy i ostrzejszy. Na przykład: obraz w rozdzielczości 1920x1080 ma 1920 pikseli szerokości i 1080 wysokości.
+      </p>
+      <p>
+        Wysoka rozdzielczość jest ważna np. w grach, filmach HD, projektowaniu graficznym oraz podczas drukowania zdjęć. Niska rozdzielczość może powodować, że obraz będzie "rozmazany" lub niewyraźny.
+      </p>
+      <img src="resolutions-1024x438.png" alt="Przykład różnych rozdzielczości tego samego obrazu">
+    </section>
+  
+    <section id="kolory">
+      <h2>Palety kolorów</h2>
+      <p>
+        Paleta kolorów to zestaw kolorów, z których możemy korzystać podczas pracy z grafiką. Najczęściej używa się trzech modeli:
+      </p>
+      <ul>
+        <li><strong>RGB</strong> – do wyświetlania na ekranie (czerwony, zielony, niebieski),</li>
+        <li><strong>CMYK</strong> – do druku (cyjan, magenta, żółty, czarny),</li>
+        <li><strong>HSL</strong> – model oparty na odcieniu, nasyceniu i jasności.</li>
+      </ul>
+      <p>
+        Dobrze dobrana paleta kolorów sprawia, że grafika jest czytelna i estetyczna.
+      </p>
+      <img src="rgb-vs-cmyk.png" alt="Przykład palety RGB i CMYK">
+    </section>
+  
+    <section id="glebia">
+      <h2>Głębia kolorów</h2>
+      <p>
+        Głębia kolorów to ilość informacji, jaką komputer zapisuje o kolorze jednego piksela. Im większa głębia, tym więcej kolorów może być pokazanych na ekranie.
+      </p>
+      <ul>
+        <li><strong>1-bit</strong> – tylko 2 kolory (czarny i biały),</li>
+        <li><strong>8-bit</strong> – 256 kolorów,</li>
+        <li><strong>24-bit</strong> – ponad 16 milionów kolorów.</li>
+      </ul>
+      <p>
+        Dzięki dużej głębi kolorów obrazy wyglądają naturalniej i bardziej realistycznie.
+      </p>
+      <img src="1530352673-kolory.png" alt="Porównanie głębi kolorów – od 1-bit do 24-bit">
+    </section>
+  
+    <section id="kompresja">
+      <h2>Kompresja (WebP i inne formaty)</h2>
+      <p>
+        Kompresja obrazu to sposób na zmniejszenie rozmiaru pliku graficznego. Dzięki temu obraz szybciej się ładuje np. na stronie internetowej. Dzielimy ją na dwa typy:
+      </p>
+      <ul>
+        <li><strong>Bezstratna</strong> – nie traci jakości (np. PNG),</li>
+        <li><strong>Stratna</strong> – trochę traci na jakości, ale plik jest dużo mniejszy (np. JPG, WebP).</li>
+      </ul>
+      <p>
+        WebP to nowoczesny format stworzony przez Google. Jest lekki, szybki i obsługuje przezroczystość jak PNG oraz kompresję jak JPG – dlatego świetnie nadaje się do internetu.
+      </p>
+      <img src="03_png_vs_webp.webp" alt="Porównanie jakości JPG i WebP">
+  
+      <h3 style="margin-top: 30px;">Porównanie formatów graficznych</h3>
+      <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+        <tr style="background-color: #eee;">
+          <th style="padding: 10px; border: 1px solid #ccc;">Format</th>
+          <th style="padding: 10px; border: 1px solid #ccc;">Typ kompresji</th>
+          <th style="padding: 10px; border: 1px solid #ccc;">Przezroczystość</th>
+          <th style="padding: 10px; border: 1px solid #ccc;">Zastosowanie</th>
+        </tr>
+        <tr>
+          <td style="padding: 10px; border: 1px solid #ccc;">JPG</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">Stratna</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">Nie</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">Zdjęcia, strony internetowe</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; border: 1px solid #ccc;">PNG</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">Bezstratna</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">Tak</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">Grafiki z przezroczystością</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; border: 1px solid #ccc;">GIF</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">Bezstratna</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">Tak</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">Proste animacje</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; border: 1px solid #ccc;">WebP</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">Stratna/Bezstratna</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">Tak</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">Nowoczesne strony WWW</td>
+        </tr>
+      </table>
+    </section>
+  
+    <section id="ciekawostki">
+      <h2>Ciekawostki</h2>
+      <ul>
+        <li>Pierwszy program graficzny na PC to <strong>Paint</strong>, który powstał w latach 80.</li>
+        <li>Grafika 3D używana w grach wykorzystuje te same techniki co filmy animowane, np. Pixar.</li>
+        <li>Popularne oprogramowanie graficzne to m.in. <strong>Adobe Photoshop</strong>, <strong>GIMP</strong>, <strong>Inkscape</strong>, <strong>Blender</strong>.</li>
+        <li>GIF może mieć tylko 256 kolorów, dlatego nie nadaje się do zdjęć, ale świetnie działa w animacjach.</li>
+        <li>Wirtualna rzeczywistość (VR) i rozszerzona rzeczywistość (AR) opierają się na grafice komputerowej w czasie rzeczywistym.</li>
+      </ul>
+    </section>
+  </main>
+  
